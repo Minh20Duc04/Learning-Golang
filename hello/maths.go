@@ -22,14 +22,21 @@ func main()  {
 	//------------------------------------------------
 
 	//chuyển chuỗi thành số
-	num := "28"
-	numToString, err := strconv.Atoi(num)
-	if(err != nil){
-		fmt.Println("Error with: ", err)
-	}else{
-		fmt.Println("Convert to string:", numToString)
-		fmt.Printf("%T \n", numToString)
-	}
+	// num := "28"
+	// numToString, err := strconv.Atoi(num)
+	// if(err != nil){
+	// 	fmt.Println("Error with: ", err)
+	// }else{
+	// 	fmt.Println("Convert to string:", numToString)
+	// 	fmt.Printf("%T \n", numToString)
+	// }
 
+	//------------------------------------------------
+	var myFloatStr string = "3.143826"
+	myFloatFromString, _ := strconv.ParseFloat(myFloatStr, 64)
+	fmt.Printf("%T \n", myFloatFromString)
+
+
+	
 
 }

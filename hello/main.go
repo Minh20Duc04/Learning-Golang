@@ -15,4 +15,21 @@ func main() {
     // fmt.Printf("Our starting price is %v\n", price)
     // fmt.Println("Take your pick")
 
+    //------------------------------------------------
+    //bất biến: 
+    const Agency = "Fast Track"
+    fmt.Println(Agency)
+
+    //iota:
+    const(
+        Economy = iota
+        Compact
+        Standard
+        FullSize
+        Luxury
+    )
+    fmt.Println(Economy)
+    fmt.Println(FullSize)
+
+
 }
