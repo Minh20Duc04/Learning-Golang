@@ -7,7 +7,7 @@ import (
 
 func main() { 
 	// temp, err := divide1(10,0)
-	// if err != nil{
+	// if err != nil{ //nill là bình thường
 	// 	fmt.Println("Error:", err)
 	// }else{
 	// 	fmt.Println(temp)

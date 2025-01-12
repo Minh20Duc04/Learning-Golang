@@ -24,6 +24,8 @@ func (ba *BankAccount) Deposit(amount float64){ //void
 	ba.Balance += amount
 }
 
+type Balance1 = float64
+
 func main() {
 	account := BankAccount{AccountNumber: "123456", Balance: 1000.00}
 	fmt.Println(account.Balance)
@@ -40,11 +42,13 @@ func main() {
 
 	//--------------------------------------------------//
 
-	account.DisplayBalance() //thao tác với dữ liệu dùng value receiver
-	account.Deposit(2000.00)
-	account.DisplayBalance()
+	// account.DisplayBalance() //thao tác với dữ liệu dùng value receiver
+	// account.Deposit(2000.00)
+	// account.DisplayBalance()
 
 	//--------------------------------------------------//
 
+	var balance Balance1
+	fmt.Printf("balane is %T\n", balance)
 	
 }

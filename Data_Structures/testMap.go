@@ -56,7 +56,6 @@ func main() {
 		"Alice": {85, 90, 78},
     	"Bob":   {88, 72, 95},
 	}
-
 	for k, v := range map1{
 		var temp int = 0
 		for _, loopInMap := range v{
@@ -64,10 +63,6 @@ func main() {
 		}
 		fmt.Printf("%v: %v\n", k, temp)
 	}
-
-
-
-
 	
 
 }
